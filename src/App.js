@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
-import {Button} from 'react-bootstrap';
+import Header from "./Component/Header";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <h1>E-Comm Project</h1>
-      <button>Normal Button</button>
-      <Button>Boostrap Button</Button>
+      <BrowserRouter>
+      <Header/>
+      <h1>E-Comm</h1>
+      </BrowserRouter>
     </div>
   );
 }
